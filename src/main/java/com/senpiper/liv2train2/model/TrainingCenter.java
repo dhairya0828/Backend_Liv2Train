@@ -13,17 +13,17 @@ public class TrainingCenter {
 
     @NotBlank(message = "center name cannot be empty")
     @Size(max=40, message = "Center Name can not be more than 40 characters")
-    private String centerName; // max 40 chars
+    private String centerName;
 
     @Id
     @NotBlank(message = "center code cannot be empty")
     @Pattern(
             regexp = "^[a-zA-Z0-9]{12}$",
             message = "center code must be alphanumeric having exactly 12 characters")
-    private String centerCode; // exactly 12 chars
+    private String centerCode;
 
     @AddressValidatorConstraint
-    private AddressDetails address; // yet to validate
+    private AddressDetails address;
 
     @Positive(message = "Capacity cannot be Negative")
     private Integer studentCapacity;
@@ -32,7 +32,7 @@ public class TrainingCenter {
     private long createdOn;
 
     @Email(message = "Provide a valid contact Email")
-    private String contactEmail; // validate
+    private String contactEmail;
 
     @NotBlank(message = "contact phone can not be empty")
     @Pattern(

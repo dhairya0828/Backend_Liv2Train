@@ -1,7 +1,5 @@
 package com.senpiper.liv2train2.repository;
-
 import com.senpiper.liv2train2.model.TrainingCenter;
-
 import java.util.List;
 import java.util.Map;
 

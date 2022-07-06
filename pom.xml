@@ -12,7 +12,7 @@
     <artifactId>Liv2Train2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Liv2Train2</name>
-    <description>Backend Assignment for Senpiiper</description>
+    <description>Backend Assignment for Senpiper</description>
     <properties>
         <java.version>18</java.version>
     </properties>
