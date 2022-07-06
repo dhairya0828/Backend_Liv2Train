@@ -1,0 +1,499 @@
+{
+	"info": {
+		"_postman_id": "8aa8e0d1-e078-4954-bc82-bcb653c6025e",
+		"name": "Liv2Train",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21721693"
+	},
+	"item": [
+		{
+			"name": "Get All Centers",
+			"item": [
+				{
+					"name": "Get All Centers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/centers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Centers (with Filters)",
+			"item": [
+				{
+					"name": "Get All Centers by CenterName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/centers?centerName=Test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							],
+							"query": [
+								{
+									"key": "centerName",
+									"value": "Test"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Centers by centerCode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/centers?studentCapacity=60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							],
+							"query": [
+								{
+									"key": "studentCapacity",
+									"value": "60"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Centers by city",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/centers?studentCapacity=60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							],
+							"query": [
+								{
+									"key": "studentCapacity",
+									"value": "60"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Centers by state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/centers?studentCapacity=60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							],
+							"query": [
+								{
+									"key": "studentCapacity",
+									"value": "60"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Centers by pincode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/centers?studentCapacity=60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							],
+							"query": [
+								{
+									"key": "studentCapacity",
+									"value": "60"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Centers by course",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/centers?studentCapacity=60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							],
+							"query": [
+								{
+									"key": "studentCapacity",
+									"value": "60"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Centers by studentCapacity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/centers?studentCapacity=60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							],
+							"query": [
+								{
+									"key": "studentCapacity",
+									"value": "60"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Centers by created before dd/MM/yyyy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/centers?studentCapacity=60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							],
+							"query": [
+								{
+									"key": "studentCapacity",
+									"value": "60"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Centers by created after dd/MM/yyyy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/centers?studentCapacity=60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							],
+							"query": [
+								{
+									"key": "studentCapacity",
+									"value": "60"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Centers - Multiple Filters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/centers?centerName=Test&createdAfter=02-06-2021",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							],
+							"query": [
+								{
+									"key": "centerName",
+									"value": "Test"
+								},
+								{
+									"key": "createdAfter",
+									"value": "02-06-2021"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post Center",
+			"item": [
+				{
+					"name": "Post Center",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"centerName\": \"Test Center 3\",\n    \"centerCode\": \"CENTERCODE30\",\n    \"address\": {\n        \"state\": \"Boston\",\n        \"detailedAddress\": \"1, Nr. Test Club, Test Address\",\n        \"city\": \"Boston\",\n        \"pincode\": \"555555\"\n    },\n    \"studentCapacity\": 100,\n    \"courses\": [\n        \"Electrical Engineering\"\n    ],\n    \"contactEmail\": \"test@test.com\",\n    \"contactPhone\": \"1112222333\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/centers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post Center (validations check)",
+			"item": [
+				{
+					"name": "Empty Input",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/centers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invalid Center Code",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"centerName\": \"Test Validation 1\",\n    \"centerCode\": \"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/centers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invalid Contact Phone",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"centerName\": \"Test Validation 1\",\n    \"centerCode\": \"CENTERCODE99\",\n    \"contactPhone\": \"111222\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/centers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invalid Json",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"centerName\": \"Test Validation 1\",\n    \"centerCode\": \"CENTERCODE99\",\n    \"contactPhone\": \"1112223333\",\n    \"address\":{\n        \"city\": \"Mumbai\",\n        \"detailedAddress\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/centers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Empty Address",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"centerName\": \"Test Validation 1\",\n    \"centerCode\": \"CENTERCODE99\",\n    \"contactPhone\": \"1112223333\",\n    \"address\":{\n        \"city\": \"Mumbai\",\n        \"detailedAddress\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/centers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invalid Email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"centerName\": \"Rajkot Center 1\",\r\n    \"centerCode\": \"Centercode01\",\r\n    \"address\": {\r\n        \"state\": \"Gujarat\",\r\n        \"detailedAddress\": \"Near Testing Scocitey, Testing Road\",\r\n        \"city\": \"Rajkot\",\r\n        \"pincode\": \"111111\"\r\n    },\r\n    \"studentCapacity\": 100,\r\n    \"courses\": [\r\n        \"Computer Engineering\", \"IT Engineering\", \"Electrical Engineering\"\r\n    ],\r\n    \"contactEmail\": \"test\",\r\n    \"contactPhone\": \"1212123434\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/centers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"centers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

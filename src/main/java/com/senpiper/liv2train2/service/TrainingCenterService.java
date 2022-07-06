@@ -3,12 +3,7 @@ package com.senpiper.liv2train2.service;
 import com.senpiper.liv2train2.model.TrainingCenter;
 import com.senpiper.liv2train2.repository.TrainingCenterRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 

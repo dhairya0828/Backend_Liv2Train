@@ -5,12 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Repository;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -19,8 +16,8 @@ import java.util.Objects;
 @Repository
 public class CustomTrainingCenterRepositoryImpl implements CustomTrainingCenterRepository{
 
-    @Autowired
-    private MongoTemplate mongoTemplate;
+
+    private @Autowired MongoTemplate mongoTemplate;
 
     @Override
     public List<TrainingCenter> findCenterByParams(Map<String, String> params) {
@@ -30,9 +27,6 @@ public class CustomTrainingCenterRepositoryImpl implements CustomTrainingCenterR
         for(Map.Entry<String, String> entry : params.entrySet()) {
             String key = entry.getKey();
             String value = entry.getValue();
-
-            System.out.println("Key :: " + key);
-            System.out.println("Value :: " + value);
 
             if (Objects.equals(key, "studentCapacity"))
                 query.addCriteria(Criteria.where("studentCapacity").is(Integer.parseInt(value)));

@@ -12,7 +12,7 @@ import javax.validation.ConstraintViolationException;
 @ControllerAdvice
 public class TrainingCenterValidations {
 
-    @ResponseBody //Why?
+    @ResponseBody
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(ConstraintViolationException.class)
     String handleConstraintViolation(ConstraintViolationException exception){
@@ -29,6 +29,6 @@ public class TrainingCenterValidations {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(HttpMessageNotReadableException.class)
     String exceptionHandler(HttpMessageNotReadableException exception) {
-        return "JSON parse error: Please check your JSON Format";
+        return "JSON parse error: Incorrect Json Format";
     }
 }
