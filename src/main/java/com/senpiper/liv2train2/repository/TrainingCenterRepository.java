@@ -5,4 +5,4 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TrainingCenterRepository extends MongoRepository<TrainingCenter, String> {}
+public interface TrainingCenterRepository extends MongoRepository<TrainingCenter, String>, CustomTrainingCenterRepository {}

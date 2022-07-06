@@ -10,7 +10,8 @@ public class AddressValidator implements ConstraintValidator<AddressValidatorCon
     }
 
     @Override
-    public boolean isValid(AddressDetails addressDetails, ConstraintValidatorContext constraintValidatorContext) {
+    public boolean isValid(final AddressDetails addressDetails,
+                           final ConstraintValidatorContext constraintValidatorContext) {
 
         if(addressDetails == null)
             return false;
